@@ -15,7 +15,7 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 // Array of Objects
-var quotes = [
+const quotes = [
   {
     quote: "The very word secrecy is repugnant in a free and open society; and we are as a people inherently and historically opposed to secret societies, to secret oaths and to secret proceedings.",
     source: "35th President John F. Kennedy",
