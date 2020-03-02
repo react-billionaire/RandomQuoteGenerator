@@ -55,8 +55,8 @@ var quotes = [
 ***/
 // Generates random quote
 function getRandomQuote(fromQuotesArray) {
-  var randomNumber = Math.floor(Math.random() * fromQuotesArray.length);
-  var randomQuoteObject = fromQuotesArray[randomNumber];
+  const randomNumber = Math.floor(Math.random() * fromQuotesArray.length);
+  const randomQuoteObject = fromQuotesArray[randomNumber];
   return randomQuoteObject;
 }
 
@@ -66,8 +66,8 @@ function getRandomQuote(fromQuotesArray) {
 ***/
 // Generates random quote by untilizing the getRandomQuote function
 function printQuote() {
-  var randomQuotes = getRandomQuote(quotes);
-  var html = '<p class="quote">' + randomQuotes.quote + '</p>' + '<p class="source">' + randomQuotes.source;
+  const randomQuotes = getRandomQuote(quotes);
+  let html = '<p class="quote">' + randomQuotes.quote + '</p>' + '<p class="source">' + randomQuotes.source;
   // Checks if quote has the following properties - citation, year, location, and prints and adds them to quote
   if (randomQuotes.citation) {
     html += '<span class="citation">' + randomQuotes.citation + '</span>';  
@@ -84,7 +84,7 @@ function printQuote() {
 
 // Generates random color. Code is from Developer --> Ahkil sai <--: https://dev.to/akhil_001/generating-random-color-with-single-line-of-js-code-fhj
 function randomBackgroundColor() {
-  var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+  const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
   return randomColor;
 }
 
