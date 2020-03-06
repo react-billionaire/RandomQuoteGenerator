@@ -94,7 +94,7 @@ document.querySelector('body').style.backgroundColor = randomBackgroundColor();
 // Prints quote to webpage
 document.getElementById('quote-box').innerHTML = printQuote();
 
-// Refreshes webpage auotmatically. Code is from --> Junior Developer Central <-- Youtube page: https://www.youtube.com/watch?v=5hLbCC2YPu0
+// Refreshes webpage auotmatically
 setInterval(() => {
   window.location.reload(true);  
 }, 10000);
